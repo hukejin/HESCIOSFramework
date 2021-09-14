@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HESCIOSFramework_Example' do
+  pod 'HESCIOSFramework', :path => '../'
+
+  target 'HESCIOSFramework_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
