@@ -24,13 +24,22 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/napolun007@gmail.com/HESCIOSFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'napolun007@gmail.com' => 'liujunlin@jrfreestyle.cn' }
-  s.source           = { :git => 'https://github.com/napolun007@gmail.com/HESCIOSFramework.git', :tag => s.version.to_s }
+  s.author           = { 'hukejin' => 'napolun007@gmail.com' }
+  s.source           = { :git => 'https://github.com/hukejin/HESCIOSFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'HESCIOSFramework/Classes/**/*'
+  s.source_files = 'HESCIOSFramework/Classes/HESCFramework.h'
+  
+  s.subspec 'toastutil' do |toastutil|
+      #子目录PPRuntimeHelper.h和PPRuntimeHelper.m （3级）
+      toastutil.source_files = 'HESCIOSFramework/Classes/toastutil/ToastUtil.{h,m}'
+     
+  end
+  
+  #开源库头文件
+  s.public_header_files = 'HESCIOSFramework/Classes/HESCFramework.h'
   
   # s.resource_bundles = {
   #   'HESCIOSFramework' => ['HESCIOSFramework/Assets/*.png']
@@ -39,4 +48,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MBProgressHUD', '~> 1.2.0'
 end

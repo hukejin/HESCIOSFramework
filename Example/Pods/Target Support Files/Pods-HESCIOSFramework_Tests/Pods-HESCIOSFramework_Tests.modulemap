@@ -1,0 +1,6 @@
+framework module Pods_HESCIOSFramework_Tests {
+  umbrella header "Pods-HESCIOSFramework_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

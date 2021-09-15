@@ -1,0 +1,6 @@
+framework module HESCIOSFramework {
+  umbrella header "HESCIOSFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
