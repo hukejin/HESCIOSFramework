@@ -11,13 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ToastUtil : NSObject
-/**
- 界面停留一秒提示
- */
+
 +(void) toastInshorttime:(NSString *)title view:(UIView *)masterView;
-/**
- 界面停留2秒提示
- */
 +(void) toastInLongtime:(NSString *)title view:(UIView *)masterView;
 
 @end

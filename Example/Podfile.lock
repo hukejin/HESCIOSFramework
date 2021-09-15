@@ -5,7 +5,10 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - HESCIOSFramework (0.1.0):
+    - HESCIOSFramework/colorutil (= 0.1.0)
     - HESCIOSFramework/toastutil (= 0.1.0)
+    - MBProgressHUD (~> 1.2.0)
+  - HESCIOSFramework/colorutil (0.1.0):
     - MBProgressHUD (~> 1.2.0)
   - HESCIOSFramework/toastutil (0.1.0):
     - MBProgressHUD (~> 1.2.0)
@@ -26,9 +29,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HESCIOSFramework: 08389a6a9f2903ba8641367c41b7fde3769c6b97
+  HESCIOSFramework: 913c8af8c778bf220af52882b2f6f7b614da0786
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
-PODFILE CHECKSUM: 184b3c0ab2ef6a1fe9e70887baee3f0c578d8ac6
+PODFILE CHECKSUM: 9ab0f7f81dd4461199b401fc64b611eeed346256
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

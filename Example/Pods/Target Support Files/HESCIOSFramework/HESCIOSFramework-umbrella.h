@@ -11,6 +11,7 @@
 #endif
 
 #import "HESCFramework.h"
+#import "ColorUtil.h"
 #import "ToastUtil.h"
 
 FOUNDATION_EXPORT double HESCIOSFrameworkVersionNumber;

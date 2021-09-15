@@ -38,6 +38,12 @@ TODO: Add long description of the pod here.
      
   end
   
+  s.subspec 'colorutil' do |colorutil|
+      #子目录PPRuntimeHelper.h和PPRuntimeHelper.m （3级）
+      colorutil.source_files = 'HESCIOSFramework/Classes/colorutil/ColorUtil.{h,m}'
+     
+  end
+  
   #开源库头文件
   s.public_header_files = 'HESCIOSFramework/Classes/HESCFramework.h'
   

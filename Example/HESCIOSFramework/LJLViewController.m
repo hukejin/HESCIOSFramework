@@ -7,7 +7,7 @@
 //
 
 #import "LJLViewController.h"
-#import "HESCFramework.h"
+#import <HESCFramework.h>
 
 @interface LJLViewController ()
 
@@ -19,6 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIColor *color = [ColorUtil colorWithHexString:@"#ff00ff"];
+    NSLog(@"a:%@",color);
+    UIColor *color1 = [ColorUtil colorWithHexString:@"#ff00ff" withAlpha:0.5];
+    NSLog(@"b:%@",color1);
+    UIColor *color2 = [ColorUtil colorWithRGBHex:0Xff00ff];
+    NSLog(@"c:%@",color2);
+    UIColor *color3 = [ColorUtil colorWithRGBHex:0Xff00ff withAlpha:0.5];
+    NSLog(@"d:%@",color3);
+    UIColor *color4 = [ColorUtil colorWithRGBAlphaHex:0xff00ff3E];
+    NSLog(@"e:%@",color4);
 }
 
 - (void)didReceiveMemoryWarning

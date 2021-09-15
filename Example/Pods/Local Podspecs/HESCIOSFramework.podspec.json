@@ -12,7 +12,7 @@
     "hukejin": "napolun007@gmail.com"
   },
   "source": {
-    "git": "https://github.com/napolun007@gmail.com/HESCIOSFramework.git",
+    "git": "https://github.com/hukejin/HESCIOSFramework.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -29,6 +29,10 @@
     {
       "name": "toastutil",
       "source_files": "HESCIOSFramework/Classes/toastutil/ToastUtil.{h,m}"
+    },
+    {
+      "name": "colorutil",
+      "source_files": "HESCIOSFramework/Classes/colorutil/ColorUtil.{h,m}"
     }
   ]
 }
