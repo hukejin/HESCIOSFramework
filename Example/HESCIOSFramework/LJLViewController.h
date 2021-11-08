@@ -6,7 +6,7 @@
 //  Copyright (c) 2021 napolun007@gmail.com. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface LJLViewController : UIViewController
 

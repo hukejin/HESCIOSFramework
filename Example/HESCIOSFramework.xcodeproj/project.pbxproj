@@ -23,6 +23,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D441D5622701C53F00297143 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D441D5612701C53F00297143 /* PhotosUI.framework */; };
+		D4665EBB271577320042E45D /* LJL3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4665EBA271577320042E45D /* LJL3ViewController.m */; };
+		D4826D7C26FC2EB600354C44 /* zuzhishow.png in Resources */ = {isa = PBXBuildFile; fileRef = D4826D7B26FC2EB600354C44 /* zuzhishow.png */; };
+		D4D5A2D42710403A00A14E84 /* LJL2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5A2D32710403A00A14E84 /* LJL2ViewController.m */; };
 		D939D1ECBD8B4A9AA1C136E5 /* Pods_HESCIOSFramework_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F3FF14B2A14A84019EB67 /* Pods_HESCIOSFramework_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,12 @@
 		9475F5489DF13336F442DC42 /* Pods-HESCIOSFramework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HESCIOSFramework_Tests.release.xcconfig"; path = "Target Support Files/Pods-HESCIOSFramework_Tests/Pods-HESCIOSFramework_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C848E12AB0304A16C871D70B /* Pods-HESCIOSFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HESCIOSFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-HESCIOSFramework_Example/Pods-HESCIOSFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D13F3870E6CDB3EB54FC9F34 /* HESCIOSFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HESCIOSFramework.podspec; path = ../HESCIOSFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D441D5612701C53F00297143 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		D4665EB9271577320042E45D /* LJL3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJL3ViewController.h; sourceTree = "<group>"; };
+		D4665EBA271577320042E45D /* LJL3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJL3ViewController.m; sourceTree = "<group>"; };
+		D4826D7B26FC2EB600354C44 /* zuzhishow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuzhishow.png; sourceTree = "<group>"; };
+		D4D5A2D22710403A00A14E84 /* LJL2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJL2ViewController.h; sourceTree = "<group>"; };
+		D4D5A2D32710403A00A14E84 /* LJL2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJL2ViewController.m; sourceTree = "<group>"; };
 		F24F3FF14B2A14A84019EB67 /* Pods_HESCIOSFramework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HESCIOSFramework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFCB238A2A151322AD2996F /* Pods-HESCIOSFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HESCIOSFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-HESCIOSFramework_Example/Pods-HESCIOSFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE7C086E9FA4BB093F338021 /* Pods-HESCIOSFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HESCIOSFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HESCIOSFramework_Tests/Pods-HESCIOSFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				D441D5622701C53F00297143 /* PhotosUI.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				179E7D754AF861F393B8EC7A /* Pods_HESCIOSFramework_Example.framework in Frameworks */,
@@ -119,6 +130,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D441D5612701C53F00297143 /* PhotosUI.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -138,8 +150,13 @@
 				6003F5A5195388D20070C39A /* LJLViewController.h */,
 				6003F5A6195388D20070C39A /* LJLViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				D4826D7B26FC2EB600354C44 /* zuzhishow.png */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				D4D5A2D22710403A00A14E84 /* LJL2ViewController.h */,
+				D4D5A2D32710403A00A14E84 /* LJL2ViewController.m */,
+				D4665EB9271577320042E45D /* LJL3ViewController.h */,
+				D4665EBA271577320042E45D /* LJL3ViewController.m */,
 			);
 			name = "Example for HESCIOSFramework";
 			path = HESCIOSFramework;
@@ -283,6 +300,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				D4826D7C26FC2EB600354C44 /* zuzhishow.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -346,11 +364,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HESCIOSFramework_Example/Pods-HESCIOSFramework_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/HESCIOSFramework/HESCIOSFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HESCIOSFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
@@ -390,7 +410,9 @@
 			files = (
 				6003F59E195388D20070C39A /* LJLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LJLViewController.m in Sources */,
+				D4D5A2D42710403A00A14E84 /* LJL2ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				D4665EBB271577320042E45D /* LJL3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

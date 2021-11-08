@@ -20,7 +20,14 @@
   },
   "source_files": "HESCIOSFramework/Classes/HESCFramework.h",
   "public_header_files": "HESCIOSFramework/Classes/HESCFramework.h",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
   "dependencies": {
+    "AFNetworking": [
+      "~> 4.0"
+    ],
     "MBProgressHUD": [
       "~> 1.2.0"
     ]
@@ -33,6 +40,34 @@
     {
       "name": "colorutil",
       "source_files": "HESCIOSFramework/Classes/colorutil/ColorUtil.{h,m}"
+    },
+    {
+      "name": "imageutil",
+      "source_files": "HESCIOSFramework/Classes/imgbase64util/Image2Base64.{h,m}"
+    },
+    {
+      "name": "datetimeutil",
+      "source_files": "HESCIOSFramework/Classes/datetimeutil/TimeUtil.{h,m}"
+    },
+    {
+      "name": "viewctrlutil",
+      "source_files": "HESCIOSFramework/Classes/viewctrlutil/ViewControllerTool.{h,m}"
+    },
+    {
+      "name": "httputil",
+      "source_files": "HESCIOSFramework/Classes/httputil/HttpUtil.{h,m}"
+    },
+    {
+      "name": "animatorutil",
+      "source_files": "HESCIOSFramework/Classes/animatorutil/AnimatorUtil.{h,m}"
+    },
+    {
+      "name": "photoalbumutil",
+      "source_files": "HESCIOSFramework/Classes/photoalbumutil/PhotoAlbum.{h,m}"
+    },
+    {
+      "name": "displayutil",
+      "source_files": "HESCIOSFramework/Classes/displayutil/DisplayUtil.{h,m}"
     }
   ]
 }

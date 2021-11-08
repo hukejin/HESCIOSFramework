@@ -11,8 +11,15 @@
 #endif
 
 #import "HESCFramework.h"
+#import "AnimatorUtil.h"
 #import "ColorUtil.h"
+#import "TimeUtil.h"
+#import "DisplayUtil.h"
+#import "HttpUtil.h"
+#import "Image2Base64.h"
+#import "PhotoAlbum.h"
 #import "ToastUtil.h"
+#import "ViewControllerTool.h"
 
 FOUNDATION_EXPORT double HESCIOSFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char HESCIOSFrameworkVersionString[];
