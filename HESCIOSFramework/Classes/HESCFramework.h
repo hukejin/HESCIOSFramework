@@ -11,6 +11,13 @@
 
 #import "ToastUtil.h"
 #import "ColorUtil.h"
+#import "Image2Base64.h"
+#import "TimeUtil.h"
+#import "ViewControllerTool.h"
+#import "HttpUtil.h"
+#import "AnimatorUtil.h"
+#import "PhotoAlbum.h"
+#import "DisplayUtil.h"
 
 
 #endif /* HESCFramework_h */

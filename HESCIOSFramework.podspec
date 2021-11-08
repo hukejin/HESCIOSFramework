@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HESCIOSFramework'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of HESCIOSFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -33,14 +33,47 @@ TODO: Add long description of the pod here.
   s.source_files = 'HESCIOSFramework/Classes/HESCFramework.h'
   
   s.subspec 'toastutil' do |toastutil|
-      #子目录PPRuntimeHelper.h和PPRuntimeHelper.m （3级）
       toastutil.source_files = 'HESCIOSFramework/Classes/toastutil/ToastUtil.{h,m}'
      
   end
   
   s.subspec 'colorutil' do |colorutil|
-      #子目录PPRuntimeHelper.h和PPRuntimeHelper.m （3级）
       colorutil.source_files = 'HESCIOSFramework/Classes/colorutil/ColorUtil.{h,m}'
+     
+  end
+  
+  s.subspec 'imageutil' do |imageutil|
+      imageutil.source_files = 'HESCIOSFramework/Classes/imgbase64util/Image2Base64.{h,m}'
+     
+  end
+  
+  s.subspec 'datetimeutil' do |datetimeutil|
+      datetimeutil.source_files = 'HESCIOSFramework/Classes/datetimeutil/TimeUtil.{h,m}'
+     
+  end
+  
+  s.subspec 'viewctrlutil' do |viewctrlutil|
+      viewctrlutil.source_files = 'HESCIOSFramework/Classes/viewctrlutil/ViewControllerTool.{h,m}'
+     
+  end
+  
+  s.subspec 'httputil' do |httputil|
+      httputil.source_files = 'HESCIOSFramework/Classes/httputil/HttpUtil.{h,m}'
+     
+  end
+  
+  s.subspec 'animatorutil' do |animatorutil|
+      animatorutil.source_files = 'HESCIOSFramework/Classes/animatorutil/AnimatorUtil.{h,m}'
+     
+  end
+  
+  s.subspec 'photoalbumutil' do |photoalbumutil|
+      photoalbumutil.source_files = 'HESCIOSFramework/Classes/photoalbumutil/PhotoAlbum.{h,m}'
+     
+  end
+  
+  s.subspec 'displayutil' do |displayutil|
+      displayutil.source_files = 'HESCIOSFramework/Classes/displayutil/DisplayUtil.{h,m}'
      
   end
   
@@ -52,7 +85,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'AFNetworking', '~> 4.0'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
 end
