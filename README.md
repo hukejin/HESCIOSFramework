@@ -46,7 +46,7 @@ git push --tags
 ```
 3. 接下来先与检测下podspec，然后将代码推送到cocoapods里
 ```
-pod spec lint HESCIOSFramework.podspec
+pod spec lint HESCIOSFramework.podspec #如果有提示模块内部引入了非模块头文件，没关系，那是检测到第三方的包了，直接执行下面的
 
 pod trunk push HESCIOSFramework.podspec --verbose --allow-warnings --use-libraries
 ```

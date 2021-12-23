@@ -6,7 +6,6 @@
 //
 
 #import "PhotoAlbum.h"
-#import "HttpUtil.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
@@ -26,25 +25,16 @@
     }
     __result = errorBlock;
     
-    HttpUtil *httputil = [[HttpUtil alloc]init];
-    [httputil downLoadFile:fileUrl response:^(NSURLResponse * _Nullable response, id  _Nullable filePath, NSError * _Nullable error, NSProgress * _Nullable progress) {
-        if(progress != nil){
-            NSLog(@"下载进度:%.2f%%",progress.fractionCompleted*100);
-        }else{
-            NSLog(@"下载完成:%@,\n路径:%@",response,filePath);
-            
-            NSString *fileLocalPath = [NSString stringWithFormat:@"%@",filePath];
-            NSString *path = [fileLocalPath stringByReplacingOccurrencesOfString:@"file://" withString:@""];
-            
-            //下载文件，如果是图片和视频存入系统相册
-            
-            if([[fileLocalPath lowercaseString] hasSuffix:@".jpg"] || [[fileLocalPath lowercaseString] hasSuffix:@".jpeg"] || [[fileLocalPath lowercaseString] hasSuffix:@".png"]){
-                UIImageWriteToSavedPhotosAlbum([UIImage imageWithContentsOfFile:path],self,@selector(image:didFinishSavingWithError:contextInfo:),nil);
-            }else if([[fileLocalPath lowercaseString] hasSuffix:@".mp4"] || [[fileLocalPath lowercaseString] hasSuffix:@".ps"]){
-                UISaveVideoAtPathToSavedPhotosAlbum(path, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
-            }
-        }
-    }];
+    NSString *fileLocalPath = [NSString stringWithFormat:@"%@",fileUrl];
+    NSString *path = [fileLocalPath stringByReplacingOccurrencesOfString:@"file://" withString:@""];
+    
+    //下载文件，如果是图片和视频存入系统相册
+    
+    if([[fileLocalPath lowercaseString] hasSuffix:@".jpg"] || [[fileLocalPath lowercaseString] hasSuffix:@".jpeg"] || [[fileLocalPath lowercaseString] hasSuffix:@".png"]){
+        UIImageWriteToSavedPhotosAlbum([UIImage imageWithContentsOfFile:path],self,@selector(image:didFinishSavingWithError:contextInfo:),nil);
+    }else if([[fileLocalPath lowercaseString] hasSuffix:@".mp4"] || [[fileLocalPath lowercaseString] hasSuffix:@".ps"]){
+        UISaveVideoAtPathToSavedPhotosAlbum(path, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
+    }
 }
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {

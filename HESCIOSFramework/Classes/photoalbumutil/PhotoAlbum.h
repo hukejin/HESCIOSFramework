@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger,NSPUIimageType) {
 
 
 /// 下载图片、视频到相册里
-/// @param fileUrl 附件url
+/// @param fileUrl 附件下载好的临时路径
 /// @param errorBlock 结果回调，如果为nil表示保存成功
 -(void)downLoadMediaFromWeb:(NSString*)fileUrl error:(SaveResultBlock) errorBlock;
 
