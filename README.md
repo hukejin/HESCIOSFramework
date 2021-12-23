@@ -59,10 +59,12 @@ pod install
 #### toastutil  无交互提示用语
 - toastInshorttime:(NSString *)title view:(UIView *)masterView  1秒提示语
 - toastInLongtime:(NSString *)title view:(UIView *)masterView  2秒提示语
+
 | 函数 | 功能 |
 | --- | --- |
 | toastInshorttime:(NSString *)title view:(UIView *)masterView | 1秒提示语 |
 | toastInLongtime:(NSString *)title view:(UIView *)masterView | 2秒提示语 |
+
 #### colorutil  十六进制转RGB颜色，支持#FFFFFF和0xFFFFFF等
 - colorWithHexString 字符串转UIColor  #FFFFFF
 - colorWithRGBHex  十六进制转UIColor  0xFFFFFF
