@@ -1,6 +1,6 @@
 {
   "name": "HESCIOSFramework",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "summary": "A short description of HESCIOSFramework.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/napolun007@gmail.com/HESCIOSFramework",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hukejin/HESCIOSFramework.git",
-    "tag": "0.1.0"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "9.0"
@@ -68,6 +68,10 @@
     {
       "name": "displayutil",
       "source_files": "HESCIOSFramework/Classes/displayutil/DisplayUtil.{h,m}"
+    },
+    {
+      "name": "permissionutil",
+      "source_files": "HESCIOSFramework/Classes/permissionutil/CheckPermissionUtil.{h,m}"
     }
   ]
 }

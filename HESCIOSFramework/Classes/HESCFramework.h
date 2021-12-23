@@ -18,6 +18,6 @@
 #import "AnimatorUtil.h"
 #import "PhotoAlbum.h"
 #import "DisplayUtil.h"
-
+#import "CheckPermissionUtil.h"
 
 #endif /* HESCFramework_h */

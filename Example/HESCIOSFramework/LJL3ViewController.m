@@ -40,6 +40,7 @@ static NSString *idstr = @"cell";
         [_tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:20 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
     });
     [NSThread alloc];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

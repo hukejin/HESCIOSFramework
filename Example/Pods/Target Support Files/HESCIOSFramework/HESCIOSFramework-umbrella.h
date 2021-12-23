@@ -17,6 +17,7 @@
 #import "DisplayUtil.h"
 #import "HttpUtil.h"
 #import "Image2Base64.h"
+#import "CheckPermissionUtil.h"
 #import "PhotoAlbum.h"
 #import "ToastUtil.h"
 #import "ViewControllerTool.h"

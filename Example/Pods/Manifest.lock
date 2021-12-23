@@ -19,43 +19,47 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HESCIOSFramework (0.1.0):
+  - HESCIOSFramework (0.3.0):
     - AFNetworking (~> 4.0)
-    - HESCIOSFramework/animatorutil (= 0.1.0)
-    - HESCIOSFramework/colorutil (= 0.1.0)
-    - HESCIOSFramework/datetimeutil (= 0.1.0)
-    - HESCIOSFramework/displayutil (= 0.1.0)
-    - HESCIOSFramework/httputil (= 0.1.0)
-    - HESCIOSFramework/imageutil (= 0.1.0)
-    - HESCIOSFramework/photoalbumutil (= 0.1.0)
-    - HESCIOSFramework/toastutil (= 0.1.0)
-    - HESCIOSFramework/viewctrlutil (= 0.1.0)
+    - HESCIOSFramework/animatorutil (= 0.3.0)
+    - HESCIOSFramework/colorutil (= 0.3.0)
+    - HESCIOSFramework/datetimeutil (= 0.3.0)
+    - HESCIOSFramework/displayutil (= 0.3.0)
+    - HESCIOSFramework/httputil (= 0.3.0)
+    - HESCIOSFramework/imageutil (= 0.3.0)
+    - HESCIOSFramework/permissionutil (= 0.3.0)
+    - HESCIOSFramework/photoalbumutil (= 0.3.0)
+    - HESCIOSFramework/toastutil (= 0.3.0)
+    - HESCIOSFramework/viewctrlutil (= 0.3.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/animatorutil (0.1.0):
-    - AFNetworking (~> 4.0)
-    - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/colorutil (0.1.0):
+  - HESCIOSFramework/animatorutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/datetimeutil (0.1.0):
+  - HESCIOSFramework/colorutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/displayutil (0.1.0):
+  - HESCIOSFramework/datetimeutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/httputil (0.1.0):
+  - HESCIOSFramework/displayutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/imageutil (0.1.0):
+  - HESCIOSFramework/httputil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/photoalbumutil (0.1.0):
+  - HESCIOSFramework/imageutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/toastutil (0.1.0):
+  - HESCIOSFramework/permissionutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
-  - HESCIOSFramework/viewctrlutil (0.1.0):
+  - HESCIOSFramework/photoalbumutil (0.3.0):
+    - AFNetworking (~> 4.0)
+    - MBProgressHUD (~> 1.2.0)
+  - HESCIOSFramework/toastutil (0.3.0):
+    - AFNetworking (~> 4.0)
+    - MBProgressHUD (~> 1.2.0)
+  - HESCIOSFramework/viewctrlutil (0.3.0):
     - AFNetworking (~> 4.0)
     - MBProgressHUD (~> 1.2.0)
   - MBProgressHUD (1.2.0)
@@ -77,7 +81,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HESCIOSFramework: 91f0b36572a0f548a18cb13313bbdcedd5625370
+  HESCIOSFramework: c8e67cdc867c57774b4d4804cf3906000869479c
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
 PODFILE CHECKSUM: 9ab0f7f81dd4461199b401fc64b611eeed346256

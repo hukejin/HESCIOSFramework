@@ -28,8 +28,14 @@ napolun007@gmail.com, liujunlin@jrfreestyle.cn
 
 HESCIOSFramework is available under the MIT license. See the LICENSE file for more info.
 
+## 在pods下创建文件
+1. HESCIOSFramework文件下创建对应的module文件夹
+2. 在module文件夹里创建相应的功能文件*.h,*.m，添加相应的功能
+3. 找到HESCIOSFramework.podspec里更新s.version版本号
+4. 在文件的下部添加新的源码路径和文件，要不pod install 会报找不到文件的错误
+
 ## 操作步骤
-1. 每次将更新内容，全部git push到远程地址，并更新HESCIOSFramework.podspec里version版本号
+1. 每次将更新内容，全部git push到远程地址
 ```
 更新子文件目录，这样才能打包framework里
 ```
@@ -41,7 +47,8 @@ git push --tags
 3. 接下来先与检测下podspec，然后将代码推送到cocoapods里
 ```
 pod spec lint HESCIOSFramework.podspec
-pod trunk push HESCIOSFramework.podspec --allow-warnings
+
+pod trunk push HESCIOSFramework.podspec --verbose --allow-warnings --use-libraries
 ```
 4. 如果提示成功，则可以进行pod install安装，如果提示找不到该库文件，需要更新下本地库资源
 ```
@@ -52,6 +59,10 @@ pod install
 #### toastutil  无交互提示用语
 - toastInshorttime:(NSString *)title view:(UIView *)masterView  1秒提示语
 - toastInLongtime:(NSString *)title view:(UIView *)masterView  2秒提示语
+| 函数 | 功能 |
+| --- | --- |
+| toastInshorttime:(NSString *)title view:(UIView *)masterView | 1秒提示语 |
+| toastInLongtime:(NSString *)title view:(UIView *)masterView | 2秒提示语 |
 #### colorutil  十六进制转RGB颜色，支持#FFFFFF和0xFFFFFF等
 - colorWithHexString 字符串转UIColor  #FFFFFF
 - colorWithRGBHex  十六进制转UIColor  0xFFFFFF
