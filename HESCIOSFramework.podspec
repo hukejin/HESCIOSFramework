@@ -24,8 +24,8 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/napolun007@gmail.com/HESCIOSFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hukejin' => 'napolun007@gmail.com' }
-  s.source           = { :git => 'https://github.com/hukejin/HESCIOSFramework.git', :tag => s.version.to_s }
+  s.author           = { 'liujunlin' => 'liujunlin@jrfreestyle.cn' }
+  s.source           = { :git => 'https://gitee.com/JieAoKeJi_liujunlin/hesciosframework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
