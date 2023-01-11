@@ -14,8 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CheckPermissionUtil : NSObject
 
+/// 检测是否允许使用位置
 -(Boolean) checkLocation;
+
+/// 检测是否允许使用相机
 -(Boolean) checkCapture;
+
+/// 检测是否允许使用相册
 -(Boolean) checkAlum;
 
 @end

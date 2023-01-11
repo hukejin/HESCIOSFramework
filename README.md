@@ -52,8 +52,10 @@ pod trunk push HESCIOSFramework.podspec --verbose --allow-warnings --use-librari
 ```
 4. 如果提示成功，则可以进行pod install安装，如果提示找不到该库文件，需要更新下本地库资源
 ```
-pod repo update
-pod install
+# 修改项目根目录下的Podfile文件
+pod 'HESCIOSFramework',:git =>'https://gitee.com/JieAoKeJi_liujunlin/hesciosframework.git'
+# 完成安装
+pod install --repo-update
 ```
 ## 库内容例子使用说明
 #### toastutil  无交互提示用语
