@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HESCIOSFramework'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'A short description of HESCIOSFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -79,6 +79,11 @@ TODO: Add long description of the pod here.
   
   s.subspec 'permissionutil' do |displayutil|
       displayutil.source_files = 'HESCIOSFramework/Classes/permissionutil/CheckPermissionUtil.{h,m}'
+     
+  end
+  
+  s.subspec 'numberformatutil' do |numberformatutil|
+      displayutil.source_files = 'HESCIOSFramework/Classes/numberformatutil/Number4String.{h,m}'
      
   end
   

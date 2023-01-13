@@ -19,5 +19,6 @@
 #import "PhotoAlbum.h"
 #import "DisplayUtil.h"
 #import "CheckPermissionUtil.h"
+#import "Number4String.h"
 
 #endif /* HESCFramework_h */

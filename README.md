@@ -58,31 +58,33 @@ pod 'HESCIOSFramework',:git =>'https://gitee.com/JieAoKeJi_liujunlin/hesciosfram
 pod install --repo-update
 ```
 ## 库内容例子使用说明
-#### toastutil  无交互提示用语
+
+#### animatorutil 基本的动画方法
 | 功能 | 函数 |
 | --- | --- |
-| 1秒提示语 | toastInshorttime:(NSString *)title view:(UIView *)masterView |
-| 2秒提示语 | toastInLongtime:(NSString *)title view:(UIView *)masterView |
+| 旋转动画 | getRotatiionAnimator |  
+| 缩放动画 | getScaleAnimator |
+| 平移动画 | getTranslationAnimator |
 
 #### colorutil  十六进制转RGB颜色，支持#FFFFFF和0xFFFFFF等 
 | 功能 | 函数 |
 | --- | --- |
 | 字符串转UIColor  #FFFFFF | colorWithHexString |
 | 十六进制转UIColor  0xFFFFFF | colorWithRGBHex |
+
 #### datetimeutil  日期和时间戳之间的转换工具，具体请看代码注释 
 | 功能 | 函数 |
 | --- | --- |
 | 标准时间转时间戳 | getTimeTemp |
 | 时间戳转标准时间 | getTimeTemp2SystemTime |
-#### viewctrlutil  获取当前view所在的viewcontroller
+
+#### displayutil 手机屏幕工具--区分是否有刘海屏
 | 功能 | 函数 |
 | --- | --- |
-| 标准时间转获取当前view所在的viewcontroller戳 | getViewController |
-#### imageutil  图片和base64编码互转
-| 功能 | 函数 |
-| --- | --- |
-| base64转UIImage | (UIImage *)base64ToImg:(NSString *)string |
-| UIImage转base64 | (NSString *)imgTobase64:(UIImage *)img |
+| 获取状态栏高度 | getStateBarHeight | 
+| 获取导航栏高度 | getNavigationBarHeight | 
+| 获取底部高度 | getBottomSafeHeight | 
+
 ####  httputil  web请求，包含了get/post/upload/download，回调均以block形式实现 
 | 功能 | 函数 |
 | --- | --- |
@@ -91,12 +93,26 @@ pod install --repo-update
 | post-json数据形式，支持自定义header | postJSONRequest |
 | 文件下载 | downLoadFile |
 | upLoadFile 不支持断点续传 | upLoadFile |
-#### animatorutil 基本的动画方法
+
+#### imageutil  图片和base64编码互转
 | 功能 | 函数 |
 | --- | --- |
-| 旋转动画 | getRotatiionAnimator |  
-| 缩放动画 | getScaleAnimator |
-| 平移动画 | getTranslationAnimator |
+| base64转UIImage | (UIImage *)base64ToImg:(NSString *)string |
+| UIImage转base64 | (NSString *)imgTobase64:(UIImage *)img |
+
+#### numberformat  数字和字符转换
+| 功能 | 函数 |
+| --- | --- |
+| 将double转string | +(NSString*) double2string:(double) number |
+| 将string转double | +(double) string2double:(NSString*)str |
+
+#### permissionutil 检测是否申请了系统权限
+| 功能 | 函数 |
+| --- | --- |
+| 是否可用位置 | checkLocation | 
+| 是否可用相机 | checkCapture | 
+| 是否可用相册 | checkAlum | 
+
 #### photoalbumutil 操作相册
 | 功能 | 函数 |
 | --- | --- |
@@ -109,6 +125,23 @@ pod install --repo-update
 | 图片缩放到对应尺寸 | imageByScalingToSize |  
 | 判断当前image是jpg还是png格式 | NSPUIimagetypeFromNSdata |
 | 根据后缀来选择文件 | filesByPath |
+
+#### toastutil  无交互提示用语
+| 功能 | 函数 |
+| --- | --- |
+| 1秒提示语 | toastInshorttime:(NSString *)title view:(UIView *)masterView |
+| 2秒提示语 | toastInLongtime:(NSString *)title view:(UIView *)masterView |
+
+#### viewctrlutil  获取当前view所在的viewcontroller
+| 功能 | 函数 |
+| --- | --- |
+| 标准时间转获取当前view所在的viewcontroller戳 | getViewController |
+
+
+
+
+
+
 
 
 

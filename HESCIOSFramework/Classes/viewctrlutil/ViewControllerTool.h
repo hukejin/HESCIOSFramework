@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(UIViewController *)getViewController:(UIView *)view;
 
+/**
+ 获取当前运行的viewcontroller
+ */
++(UIViewController *) getCurViewctrl;
+
 @end
 
 NS_ASSUME_NONNULL_END
