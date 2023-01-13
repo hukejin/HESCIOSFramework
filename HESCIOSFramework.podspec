@@ -83,7 +83,7 @@ TODO: Add long description of the pod here.
   end
   
   s.subspec 'numberformatutil' do |numberformatutil|
-      displayutil.source_files = 'HESCIOSFramework/Classes/numberformatutil/Number4String.{h,m}'
+      numberformatutil.source_files = 'HESCIOSFramework/Classes/numberformatutil/Number4String.{h,m}'
      
   end
   
